@@ -1,22 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Don’t commit the following directories created by pub.
+.buildlog
+.pub/
+build/
+packages
 
-# Custom for Visual Studio
-*.cs     diff=csharp
-*.sln    merge=union
-*.csproj merge=union
-*.vbproj merge=union
-*.fsproj merge=union
-*.dbproj merge=union
+# Or the files created by dart2js.
+*.dart.js
+*.js_
+*.js.deps
+*.js.map
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# Include when developing application packages.
+pubspec.lock
