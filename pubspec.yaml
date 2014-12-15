@@ -1,0 +1,9 @@
+name: pixies
+description: A sample web application
+dependencies:
+  browser: any
+transformers:
+- $dart2js:
+    minify: true
+    checked: false
+    commandLineOptions: ['--trust-type-annotations', '--trust-primitives']
